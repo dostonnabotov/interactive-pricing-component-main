@@ -1,0 +1,26 @@
+.discount {
+  position: relative;
+}
+
+.discount::after {
+  content: "-25%";
+  font-size: 0.8rem;
+  position: absolute;
+  top: 0;
+  left: 110%;
+
+  font-weight: var(--fw-700);
+  padding: 0.2em 0.5em;
+
+  background-color: var(--bg-warning);
+  color: var(--clr-warning);
+  border-radius: 0.7em;
+}
+
+@media (min-width: 50em) {
+  .discount::after {
+    content: "25% discount";
+    width: 7.5rem;
+    text-align: center;
+  }
+}

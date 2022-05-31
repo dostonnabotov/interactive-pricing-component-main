@@ -1,62 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Interactive pricing component</title>
+  </head>
 
-  <!-- custom css -->
-  <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | Interactive pricing component</title>
-</head>
+  <body>
+    <header class="header m-block-6">
+      <h1 class="fw-700 text-center text-dark">Simple, traffic-based pricing</h1>
+      <p class="text-center">Sign-up for our 30-day trial. No credit card required.</p>
+    </header>
+    <main class="main container">
+      <!-- card -->
+      <div class="card flow">
+        <div class="card__header flex custom-flex">
+          <p class="uppercase fw-700">100k Pageviews</p>
+          <p class="flex a-center" style="--gap: 0.3rem">
+            <span class="fs-900 fw-700 text-dark">$16.00</span> / month
+          </p>
+        </div>
 
-<body>
-  <header class="header m-block-6">
-    <h1 class="fw-700 text-center text-dark">Simple, traffic-based pricing</h1>
-    <p class="text-center">Sign-up for our 30-day trial. No credit card required.</p>
-  </header>
-  <main class="main container">
+        <div class="card__slider">
+          <input type="range" min="0" max="100" value="50" class="slider" id="slider" />
+        </div>
 
-    <!-- card -->
-    <div class="card flow">
-      <div class="card__header flex custom-flex">
-        <p class="uppercase fw-700">100k Pageviews</p>
-        <p class="flex a-center" style="--gap: .3rem"><span class="fs-900 fw-700 text-dark">$16.00</span> / month</p>
+        <div class="card__billing flex a-center">
+          <p>Monthly Billing</p>
+          <label for="toggle">
+            <input type="checkbox" id="toggle" style="display: none" />
+            <span class="toggle"></span>
+          </label>
+          <p class="discount">Yearly Billing</p>
+        </div>
+
+        <hr />
+
+        <div class="card__cta flex custom-flex">
+          <ol class="flow">
+            <li>Unlimited websites</li>
+            <li>100% data ownership</li>
+            <li>Email reports</li>
+          </ol>
+
+          <a href="#" class="btn btn--primary">Start my trial</a>
+        </div>
+        <!-- /card -->
       </div>
-
-      <div class="card__slider m-block-4">
-        <input type="range" min="0" max="100" value="50" class="slider" id="slider">
-      </div>
-
-      <div class="card__billing flex a-center m-block-4">
-        <p>Monthly Billing</p>
-        <label for="toggle">
-          <input type="checkbox" id="toggle" class="toggle--checkbox" style="display: none;">
-          <span class="toggle"></span>
-        </label>
-        <p class="discount">Yearly Billing</p>
-      </div>
-
-      <hr>
-
-      <div class="card__cta flex custom-flex">
-        <ol class="list list--offers flow">
-          <li>Unlimited websites</li>
-          <li>100% data ownership</li>
-          <li>Email reports</li>
-        </ol>
-
-        <a href="#" class="btn btn--primary">Start my trial</a>
-      </div>
-      <!-- /card -->
-    </div>
-  </main>
-</body>
-
+    </main>
+  </body>
 </html>

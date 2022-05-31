@@ -1,0 +1,19 @@
+.btn {
+  width: 15em;
+  height: fit-content;
+
+  padding: 1em;
+  font-weight: var(--fw-700);
+
+  border: 0;
+  border-radius: 20em;
+}
+
+.btn--primary {
+  background-color: var(--bg-cta);
+  color: var(--clr-cta);
+}
+
+.btn--primary:is(:hover, :focus) {
+  color: var(--neutral-200);
+}
