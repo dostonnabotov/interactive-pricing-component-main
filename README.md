@@ -21,7 +21,7 @@ This is a solution to the [Interactive pricing component challenge on Frontend M
 ## Links
 
 - [Solution URL](https://github.com/dostonnabotov/interactive-pricing-component-main)
-- [Live Site URL](https://dostonnabotov.github.io/interactive-pricing-component-main/)
+- [Live Site URL](https://fm-interactive-pricing-component.netlify.app/)
 
 ## Built with
 
