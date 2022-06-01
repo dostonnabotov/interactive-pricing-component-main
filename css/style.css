@@ -138,6 +138,7 @@ ul > li {
   width: -moz-fit-content;
   width: fit-content;
   padding-left: 1rem;
+  margin-left: 2rem;
 }
 @media (max-width: 50em) {
   ul > li {
