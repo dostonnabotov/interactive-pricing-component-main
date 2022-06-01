@@ -6,18 +6,6 @@ const pageviews = document.getElementById('pageviews');
 
 let mid_price = 16;
 
-toggle.addEventListener('change', () => {
-    if (toggle.checked === true) {
-        mid_price = (16 * 12) * 0.75;
-        period.innerHTML = 'year'
-    } else {
-        mid_price = 16;
-        period.innerHTML = 'month'
-    }
-
-    checker();
-})
-
 function checker() {
     switch (slider.value) {
         case '1':
@@ -45,7 +33,18 @@ function checker() {
     }
 }
 
-slider.addEventListener('input', () => {
+toggle.addEventListener('change', () => {
+    if (toggle.checked === true) {
+        // 25% => 0.25, 25% discount => 0.75
+        mid_price = (16 * 12) * 0.75;
+        period.innerHTML = 'year'
+    } else {
+        mid_price = 16;
+        period.innerHTML = 'month'
+    }
+
     checker();
 })
+
+slider.addEventListener('input', checker);
 

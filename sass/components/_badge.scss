@@ -1,4 +1,4 @@
-@use '../abstract/variables' as *;
+@use "../abstract/variables" as *;
 
 .discount {
   --clr-warning: hsl(15, 100%, 70%);
@@ -12,9 +12,9 @@
   position: absolute;
   top: 0;
 
-  margin-left: .5rem;
+  margin-left: 0.5rem;
   padding: 0.2em 0.5em;
-  
+
   font-size: 0.8rem;
   font-weight: $fw-700;
   text-align: center;
@@ -23,7 +23,7 @@
   color: var(--clr-warning);
   border-radius: 0.7em;
 
-  @media (max-width: 50em) {
+  @media (max-width: $breakpoint) {
     content: "-25%";
   }
 }

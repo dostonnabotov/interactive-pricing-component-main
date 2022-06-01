@@ -1,4 +1,4 @@
-@use '../abstract/variables' as *;
+@use "../abstract/variables" as *;
 
 .flow > *:where(:not(:first-child)) {
   margin-top: var(--flow-spacer, 1rem);
@@ -13,14 +13,13 @@
   justify-content: space-between;
   align-items: center;
 
-  @media (max-width: 50em) {
+  @media (max-width: $breakpoint) {
     flex-direction: column;
     justify-content: center;
   }
 }
 
 .fs-900 { font-size: $fs-900; }
-
 .fs-700 { font-size: $fs-700; }
 
 .fw-700 { font-weight: $fw-700; }

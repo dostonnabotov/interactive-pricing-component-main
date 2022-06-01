@@ -1,24 +1,22 @@
-@use '../abstract/variables' as *;
+@use "../abstract/variables" as *;
 
 .header {
-  --flow-spacer: .5rem;
+  --flow-spacer: 0.5rem;
   padding-block: max(4rem, 10vh);
   padding-inline: 2rem;
   margin-bottom: 2rem;
 
-
-  background-image: url('/images/pattern-circles.svg');
+  background-image: url("/images/pattern-circles.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: hsl(224, 65%, 95%);
 
-  
   border-bottom-left-radius: 10em;
 
-  @media (max-width: 50em) {
+  @media (max-width: $breakpoint) {
     & p span {
-        display: block;
-      }
+      display: block;
+    }
   }
 }
 
@@ -41,9 +39,9 @@
   border-radius: 1em;
   /* reference: https://getcssscan.com/css-box-shadow-examples */
   box-shadow: 0px 8px 15px rgba(149, 157, 165, 0.2);
-}
 
-.card__billing {
-  width: fit-content;
-  margin-inline: auto;
+  &__billing {
+    width: fit-content;
+    margin-inline: auto;
+  }
 }

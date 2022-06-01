@@ -1,12 +1,13 @@
 # Frontend Mentor - Interactive pricing component
 
-## Table of contents
+## Contents
 
 - [Overview](#overview)
 - [Screenshot](#screenshot)
 - [Links](#links)
 - [Built with](#built-with)
 - [Author](#author)
+- [What I learnt](#what-i-learnt)
 - [Page view and pricing totals](#page-view-and-pricing-totals)
 
 ## Overview
@@ -19,16 +20,15 @@ This is a solution to the [Interactive pricing component challenge on Frontend M
 
 ## Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://github.com/dostonnabotov/interactive-pricing-component-main)
+- [Live Site URL](https://dostonnabotov.github.io/interactive-pricing-component-main/)
 
 ## Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
+- Sass
+- JavaScript
+- Desktop-first workflow
 
 ## Author
 
