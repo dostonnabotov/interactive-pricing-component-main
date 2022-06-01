@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,30 +19,56 @@
     />
 
     <!-- custom css -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="index.js" defer></script>
     <title>Frontend Mentor | Interactive pricing component</title>
   </head>
 
   <body>
-    <header class="header m-block-6">
-      <h1 class="fw-700 text-center text-dark">Simple, traffic-based pricing</h1>
-      <p class="text-center">Sign-up for our 30-day trial. No credit card required.</p>
+    <header class="[ header ] [ flow ]">
+      <h1 class="fs-700 fw-700 text-center text-dark">
+        Simple, traffic-based pricing
+      </h1>
+      <p class="text-center">
+        <span>Sign-up for our 30-day trial.</span>
+        <span>No credit card required.</span>
+      </p>
     </header>
-    <main class="main container">
+    <main>
       <!-- card -->
-      <div class="card flow">
-        <div class="card__header flex custom-flex">
-          <p class="uppercase fw-700">100k Pageviews</p>
-          <p class="flex a-center" style="--gap: 0.3rem">
-            <span class="fs-900 fw-700 text-dark">$16.00</span> / month
+      <div class="[ card ] [ flow ]">
+        <!-- card header -->
+        <header class="[ card__header ] [ flex custom-flex ]">
+          <p class="uppercase fw-700">
+            <span id="pageviews">100k</span> Pageviews
           </p>
-        </div>
+          <div class="[ price-per-period ] [ flex ]">
+            <p class="fs-900 fw-700 text-dark">
+              $ <span id="price">16.00</span>
+            </p>
+            /
+            <span id="period"> month </span>
+          </div>
+        </header>
+        <!-- /card header -->
 
+        <!-- card slider -->
         <div class="card__slider">
-          <input type="range" min="0" max="100" value="50" class="slider" id="slider" />
+          <input
+            type="range"
+            min="1"
+            max="5"
+            value="3"
+            class="slider"
+            id="slider"
+            step="1"
+          />
         </div>
+        <!-- /card slider -->
 
-        <div class="card__billing flex a-center">
+        <!-- card billing -->
+        <div class="[ card__billing ] [ flex custom-flex ]">
           <p>Monthly Billing</p>
           <label for="toggle">
             <input type="checkbox" id="toggle" style="display: none" />
@@ -45,20 +76,23 @@
           </label>
           <p class="discount">Yearly Billing</p>
         </div>
+        <!-- /card billing -->
 
         <hr />
 
-        <div class="card__cta flex custom-flex">
-          <ol class="flow">
+        <!-- card cta -->
+        <div class="flex custom-flex">
+          <ul class="flow">
             <li>Unlimited websites</li>
             <li>100% data ownership</li>
             <li>Email reports</li>
-          </ol>
+          </ul>
 
           <a href="#" class="btn btn--primary">Start my trial</a>
         </div>
-        <!-- /card -->
+        <!-- /card cta -->
       </div>
+      <!-- /card -->
     </main>
   </body>
 </html>

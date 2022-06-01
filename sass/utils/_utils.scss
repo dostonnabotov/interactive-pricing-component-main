@@ -1,7 +1,4 @@
-.container {
-  width: min(100% - 2rem, 56.25rem);
-  margin-inline: auto;
-}
+@use '../abstract/variables' as *;
 
 .flow > *:where(:not(:first-child)) {
   margin-top: var(--flow-spacer, 1rem);
@@ -12,50 +9,25 @@
   gap: var(--gap, 1rem);
 }
 
-.a-center {
-  align-items: center;
-}
-
 .custom-flex {
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-}
 
-@media (min-width: 50em) {
-  .custom-flex {
-    flex-direction: row;
-    justify-content: space-between;
+  @media (max-width: 50em) {
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
-.m-block-4 {
-  margin-block: var(--spacer-4);
-}
+.fs-900 { font-size: $fs-900; }
 
-.m-block-6 {
-  margin-block: var(--spacer-6);
-}
+.fs-700 { font-size: $fs-700; }
 
-.fs-900 {
-  font-size: var(--fs-900);
-}
+.fw-700 { font-weight: $fw-700; }
 
-.fs-700 {
-  font-size: var(--fs-700);
-}
+.text-dark { color: $neutral-700; }
 
-.fw-700 {
-  font-weight: var(--fw-700);
-}
-
-.text-dark {
-  color: var(--neutral-700);
-}
-
-.text-center {
-  text-align: center;
-}
+.text-center { text-align: center; }
 
 .uppercase {
   text-transform: uppercase;

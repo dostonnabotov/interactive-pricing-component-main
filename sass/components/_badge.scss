@@ -1,26 +1,29 @@
+@use '../abstract/variables' as *;
+
 .discount {
+  --clr-warning: hsl(15, 100%, 70%);
+  --bg-warning: hsl(14, 92%, 95%);
   position: relative;
 }
 
 .discount::after {
-  content: "-25%";
-  font-size: 0.8rem;
+  content: "-25% discount";
+  width: max-content;
   position: absolute;
   top: 0;
-  left: 110%;
 
-  font-weight: var(--fw-700);
+  margin-left: .5rem;
   padding: 0.2em 0.5em;
+  
+  font-size: 0.8rem;
+  font-weight: $fw-700;
+  text-align: center;
 
   background-color: var(--bg-warning);
   color: var(--clr-warning);
   border-radius: 0.7em;
-}
 
-@media (min-width: 50em) {
-  .discount::after {
-    content: "25% discount";
-    width: 7.5rem;
-    text-align: center;
+  @media (max-width: 50em) {
+    content: "-25%";
   }
 }

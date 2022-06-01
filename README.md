@@ -32,9 +32,20 @@ This is a solution to the [Interactive pricing component challenge on Frontend M
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Doston Nabotov](https://www.dostonnabotov.netlify.com)
+- Frontend Mentor - [@dostonnabotov](https://www.frontendmentor.io/profile/dostonnabotov)
+- Github - [@dostonnabotov](https://www.github.com/dostonnabotov)
+
+## What I learnt
+
+- HTML
+  - grouping related classes
+- CSS/Sass
+  - `max-content` on `width` of an element
+  - `max()` in `padding`
+  - `clamp()` in `font-size`
+- JavaScript
+  - practiced `switch` statement
 
 ## Page view and pricing totals
 

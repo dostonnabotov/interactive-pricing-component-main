@@ -1,26 +1,49 @@
-.main {
-  display: grid;
-  place-items: center;
+@use '../abstract/variables' as *;
+
+.header {
+  --flow-spacer: .5rem;
+  padding-block: max(4rem, 10vh);
+  padding-inline: 2rem;
+  margin-bottom: 2rem;
+
+
+  background-image: url('/images/pattern-circles.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: hsl(224, 65%, 95%);
+
+  
+  border-bottom-left-radius: 10em;
+
+  @media (max-width: 50em) {
+    & p span {
+        display: block;
+      }
+  }
+}
+
+.price-per-period {
+  --gap: 0.3rem;
+  align-items: center;
 }
 
 .card {
   --flow-spacer: 2rem;
-  width: min(100%, 40rem);
+  width: min(100% - 2rem, 40rem);
 
   margin-inline: auto;
   padding: 2em;
   text-align: center;
+  margin-top: -4rem;
+  margin-bottom: 3rem;
 
-  background-color: var(--neutral-100);
+  background-color: $neutral-100;
   border-radius: 1em;
-  box-shadow: 0 5px 20px -6px #999;
+  /* reference: https://getcssscan.com/css-box-shadow-examples */
+  box-shadow: 0px 8px 15px rgba(149, 157, 165, 0.2);
 }
 
 .card__billing {
   width: fit-content;
   margin-inline: auto;
-}
-
-.card__cta {
-  padding-block: 2rem;
 }

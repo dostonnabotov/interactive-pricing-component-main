@@ -1,11 +1,14 @@
-ol {
+@use '../abstract/variables' as *;
+
+ul {
   --flow-spacer: 1rem;
   list-style-image: url("/images/icon-check.svg");
+  padding: 0;
 }
 
-ol > li {
-  padding-left: 1rem;
+ul > li {
   width: fit-content;
+  padding-left: 1rem;
 
   @media (max-width: 50em) {
     margin-inline: auto;

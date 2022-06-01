@@ -1,21 +1,23 @@
+@use '../abstract/variables' as *;
+
 .toggle {
+  --_gap: 0.3em;
+  --_width: 35%;
   display: inline-block;
   position: relative;
   width: 66px;
   height: 30px;
 
-  background-color: var(--neutral-4);
+  background-color: $neutral-400;
   border-radius: 20em;
   cursor: pointer;
 }
 
 .toggle:hover {
-  background-color: var(--bg-primary);
+  background-color: $bg-primary;
 }
 
 .toggle::before {
-  --_gap: 0.3em;
-  --_width: 35%;
   content: "";
   position: absolute;
   top: var(--_gap);
@@ -24,8 +26,12 @@
   right: auto;
 
   width: var(--_width);
-  background-color: var(--neutral-100);
+  background-color: $neutral-100;
   border-radius: 50%;
+}
+
+input[type="checkbox"]:checked ~ .toggle {
+  background-color: $bg-primary;
 }
 
 input[type="checkbox"]:checked ~ .toggle::before {

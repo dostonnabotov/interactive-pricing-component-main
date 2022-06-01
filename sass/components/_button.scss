@@ -1,9 +1,14 @@
+@use '../abstract/variables' as *;
+
 .btn {
+  --clr-cta: hsl(226, 100%, 87%);
+  --bg-cta: hsl(227, 35%, 25%);
   width: 15em;
   height: fit-content;
 
   padding: 1em;
-  font-weight: var(--fw-700);
+  font-weight: $fw-700;
+  text-decoration: none;
 
   border: 0;
   border-radius: 20em;
@@ -15,5 +20,5 @@
 }
 
 .btn--primary:is(:hover, :focus) {
-  color: var(--neutral-200);
+  color: $neutral-200;
 }
